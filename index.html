@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!--script src="JS/index.js"></script-->
+</head>
+<body>
+    <h1>Carrito de compras</h1>
+    <!--div id="dBlue" class="d-flex fw-bolder  justify-content-end">$USD 1 = </div-->
+    <div class="d-flex ms-2 justify-content-end">Precios expresados en:  
+        <div class="ms-2">
+            <input type="radio" name="moneda" value="$USD" id="USD" checked>
+            <label for="USD">$USD</label> 
+        </div>
+        <div class="ms-2">
+            <input type="radio" name="moneda" value="$" id="PESO">
+            <label for="PESO">$(Arg)</label> 
+        </div>
+    </div>
+    <div class="container-fluid card border-dark mb-3" style="max-width: auto;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img src="./assets/bornes.png" class="img-fluid rounded-start" alt="...">
+                </div>	
+            </div>
+            <div class="col-md-6">
+                <div class="card-header fw-bolder fs-5">Bornera</div>
+                <div class="card-body">    
+                    <p class="card-text">Los mejores bornes del mundo, para que su tablero de control cumpla los máximos estandares de calidad. Amplia variedad de modelos disponibles de acuerdo a cada necesidad. Cumpliendo las exigencias electricas para cada caso.</p>
+                    <div>
+                        <div class="d-flex fw-bolder fs-5">
+                            <div>Precio: </div> 
+                            <div id="Precio0" class="ms-2"></div> 
+                        </div>  
+                        
+                        <div id="stock0" class="fw-bolder">Stock:</div>
+                        <div class="row input-group">
+                            <div id="input0" class="col-md-2">
+                                <input type="number" id="value0" class="form-control" placeholder="Cant." min="0" max="100" style="width: 4.9rem">   
+                            </div>        
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-primary" type="button" id="add0">Agregar al carrito</button> 
+                            </div> 
+                            <div id="parrafo0" class="col-md-6">
+                                <p style="color:red" class="fw-bold"></p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+				<ul class="list-group">
+					<li class="list-group-item d-flex">
+                        <div id="sigSub0">Sub Total:</div> 
+                        <div id="SubTotal0" class="ms-2"></div>
+                    </li>
+					<li class="list-group-item d-flex">
+                        <div id="sigIva0">IVA:</div>
+                        <div id="Iva0" class="ms-2"></div>
+                    </li>
+					<li class="list-group-item d-flex">  
+                        <div id="sigTot0">TOTAL:</div>
+                        <div id="Total0" class="ms-2"></div>
+                    </li>
+                    <li class="list-group-item d-flex">  
+                        <div>
+                            <button class="btn btn-outline-primary" type="button" id="clear0">Vaciar producto</button> 
+                        </div>
+                    </li>
+				</ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid card border-dark mb-3" style="max-width: auto;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img src="./assets/controladores_programables.png" class="img-fluid rounded-start" alt="...">
+                </div>	
+            </div>
+            <div class="col-md-6">
+                <div class="card-header fw-bolder fs-5">PLC</div>
+                <div class="card-body">    
+                    <p class="card-text">Automatización profesional para sus instalaciones. Phoenix Contact le ofrece siempre el PLC para Ethernet, los sistemas de E/S y el software de PLC adecuados, tanto para señales analógicas como para señales digitales.</p>
+                    <div>
+                        <div class="d-flex fw-bolder fs-5">
+                            <div>Precio: </div> 
+                            <div id="Precio1" class="ms-2"></div>   
+                        </div> 
+
+                        <div id="stock1" class="fw-bolder">Stock:</div>
+                        <div class="row input-group">
+                            <div id="input1" class="col-md-2">
+                                <input type="number" id="value1" class="form-control" placeholder="Cant." min="0" max="100" style="width: 4.9rem">   
+                            </div>        
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-primary" type="button" id="add1">Agregar al carrito</button> 
+                            </div> 
+                            <div id="parrafo1" class="col-md-6">
+                                <p style="color:red" class="fw-bold"></p>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-group">
+					<li class="list-group-item d-flex">
+                        <div id="sigSub1">Sub Total:</div> 
+                        <div id="SubTotal1" class="ms-2"></div>
+                    </li>
+					<li class="list-group-item d-flex">
+                        <div id="sigIva1">IVA:</div>
+                        <div id="Iva1" class="ms-2"></div>
+                    </li>
+					<li class="list-group-item d-flex">  
+                        <div id="sigTot1">TOTAL:</div>
+                        <div id="Total1" class="ms-2"></div>
+                    </li>
+                    <li class="list-group-item d-flex">  
+                        <div>
+                            <button class="btn btn-outline-primary" type="button" id="clear1">Vaciar producto</button> 
+                        </div>
+                    </li>
+				</ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid card border-dark mb-3" style="max-width: auto;">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img src="./assets/fuentes.png" class="img-fluid rounded-start" alt="...">
+                </div>	
+            </div>
+            <div class="col-md-6">
+                <div class="card-header fw-bolder fs-5">Fuente</div>
+                <div class="card-body">    
+                    <p class="card-text">Fuentes de alimentación, convertidores DC/DC, módulos de redundancia y UPS´s diseñados de forma óptima en términos de funcionalidad y diseño para satisfacer los requisitos de las diferentes industrias.</p>
+                    <div>
+                        <div class="d-flex fw-bolder fs-5">
+                            <div>Precio: </div> 
+                            <div id="Precio2" class="ms-2"></div> 
+                        </div> 
+
+                        <div id="stock2" class="fw-bolder">Stock:</div>
+                        <div class="row input-group">
+                            <div id="input2" class="col-md-2">
+                                <input type="number" id="value2" class="form-control" placeholder="Cant." min="0" max="100" style="width: 4.9rem">   
+                            </div>        
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-primary" type="button" id="add2">Agregar al carrito</button> 
+                            </div>
+                            <div id="parrafo2" class="col-md-6">
+                                <p style="color:red" class="fw-bold"></p>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <ul class="list-group">
+					<li class="list-group-item d-flex">
+                        <div id="sigSub2">Sub Total:</div> 
+                        <div id="SubTotal2" class="ms-2"></div>
+                    </li>
+					<li class="list-group-item d-flex">
+                        <div id="sigIva2">IVA:</div>
+                        <div id="Iva2" class="ms-2"></div>
+                    </li>
+					<li class="list-group-item d-flex">  
+                        <div id="sigTot2">TOTAL:</div>
+                        <div id="Total2" class="ms-2"></div>
+                    </li>
+                    <li class="list-group-item d-flex">  
+                        <div>
+                            <button class="btn btn-outline-primary" type="button" id="clear2">Vaciar producto</button> 
+                        </div>
+                    </li>
+				</ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="JS/index.js"></script>
+    <script src="JS/sweetAlert.js"></script>
+</body>
+
+</html>
